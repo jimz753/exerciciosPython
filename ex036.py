@@ -1,0 +1,6 @@
+casa = float(input('Qual é o valor da casa? '))
+sal = float(input('Qual é o seu sálario? '))
+t = int(input('Em quantos anos pretende pagar? '))
+p = casa/(t*12)
+print('O valor das prestações será de {}{:.2f}{} por {} meses'.format('\033[1;34m', p, '\033[m', t*12) if p<(sal*0.3)
+      else '{}As prestações não podem exceder 30% do seu sálario, tente aumentar o tempo em que pretende pagar.{}'.format('\033[1;31m', '\033[m'))
